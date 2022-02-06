@@ -12,7 +12,7 @@ pipeline {
     stage ('Deploy') {
       steps {
         script {
-          deploy adapters: [tomcat8(credentialsId: 'tomcat_user', path: '', url: 'http://ec2-34-209-149-136.compute-1.amazonaws.com:8080' compute-1.amazonaws.com:8080')], contextPath: '', onFailure: false, war: '**/*.war' 
+          deploy adapters: [tomcat8(credentialsId: 'tomcat_user', path: '', url: 'http://ec2-54-190-113-205.us-west-2.compute.amazonaws.com:8080' compute-1.amazonaws.com:8080')], contextPath: '', onFailure: false, war: '**/*.war' 
         }
       }
     }
